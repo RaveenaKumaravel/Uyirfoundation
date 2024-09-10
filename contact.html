@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyir Foundation - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events & Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Become a Member</h1>
+        <div class="contact-details">
+            <div class="contact-info">
+                <h2>Our Office</h2>
+                <p><strong>Uyir Foundation</strong></p>
+                <p>123 Green Street</p>
+                <p>Green City, GC 45678</p>
+                <p><strong>Email:</strong> info@uyirfoundation.org</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Hours:</strong> Mon-Fri, 9am - 5pm</p>
+            </div>
+            <div class="contact-form">
+                <h2>Join Us</h2>
+                <form action="submit_member.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="cta-button">Join Now</button>
+                </form>
+                <p id="member-count">Total Members: <?php include 'member_count.php'; ?></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Uyir Foundation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
