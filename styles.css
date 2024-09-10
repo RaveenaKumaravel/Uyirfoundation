@@ -249,3 +249,13 @@ footer {
 .contact-form button:hover {
     background-color: #b2952b;
 }
+/* Logo styles */
+.logo-centered img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    object-fit: cover;
+}
+
