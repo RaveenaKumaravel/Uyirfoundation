@@ -38,7 +38,21 @@ nav ul li a:hover {
     color: #333333;
 }
 
-/* Logo Styles */
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin: 5px;
+}
+
+/* Centered Logo */
 .logo-centered {
     display: flex;
     justify-content: center;
@@ -47,11 +61,11 @@ nav ul li a:hover {
 
 .logo-centered img {
     display: block;
-    border-radius: 50%;  /* Circle-shaped logo */
+    border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    animation: rotate 10s linear infinite; /* Rotating effect */
+    animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
@@ -60,6 +74,29 @@ nav ul li a:hover {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-top: 3px solid #d4af37;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }
 
@@ -79,11 +116,6 @@ h1 {
     font-style: italic;
     font-size: 24px;
     margin-bottom: 20px;
-}
-
-p {
-    color: #555555;
-    line-height: 1.6;
 }
 
 /* Button Styles */
@@ -114,35 +146,7 @@ p {
     font-weight: bold;
 }
 
-/* Events Section */
-.event {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.event h2 {
-    color: #d4af37;  /* Gold color for event heading */
-}
-
-.event p {
-    color: #555555;
-}
-
-.event a {
-    background-color: #d4af37;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.event a:hover {
-    background-color: #b2952b;
-}
-
-/* Slideshow for Gallery */
+/* Slideshow */
 .slideshow-container {
     position: relative;
     max-width: 1000px;
@@ -157,10 +161,8 @@ p {
 .slide img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Auto-fit images */
 }
 
-/* Slideshow Dots */
 .dot {
     height: 15px;
     width: 15px;
@@ -172,65 +174,6 @@ p {
 
 .dot.active {
     background-color: #d4af37;
-}
-
-/* Contact Page Styles */
-.contact {
-    padding: 100px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.contact h1 {
-    color: #d4af37;
-}
-
-.contact-details {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.contact-info, .contact-form {
-    flex: 1;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #d4af37;
-    border-radius: 8px;
-}
-
-.contact-info h2, .contact-form h2 {
-    color: #d4af37;
-}
-
-.contact-info p {
-    color: #555555;
-    margin: 10px 0;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #d4af37;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #d4af37;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #b2952b;
 }
 
 /* Footer */
