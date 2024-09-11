@@ -12,9 +12,15 @@
             <div class="logo-centered">
                 <img src="logo.png" alt="Uyir Foundation Logo" />
             </div>
-                                <h1>Uyir Foundation</h1>
+            <h1>Uyir Foundation</h1>
 
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events & Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -24,25 +30,21 @@
     </header>
 
     <section class="contact">
-        <h1>Become a Member</h1>
+        <h1>Contact Us</h1>
         <div class="contact-details">
             <div class="contact-info">
-                <h2>Our Office</h2>
-                <p><strong>Uyir Foundation</strong></p>
-                <p>123 Green Street</p>
-                <p>Green City, GC 45678</p>
-                <p><strong>Email:</strong> info@uyirfoundation.org</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Hours:</strong> Mon-Fri, 9am - 5pm</p>
+                <h2>Our Address</h2>
+                <p>123 Uyir Street, Chennai, Tamil Nadu, India</p>
+                <p>Email: info@uyirfoundation.org</p>
+                <p>Phone: +91 98765 43210</p>
             </div>
             <div class="contact-form">
-                <h2>Join Us</h2>
-                <form action="submit_member.php" method="POST">
+                <h2>Become a Member (Free)</h2>
+                <form action="submit_member.php" method="post">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <button type="submit" class="cta-button">Join Now</button>
+                    <button type="submit">Join Us</button>
                 </form>
-                <p id="member-count">Total Members: <?php include 'member_count.php'; ?></p>
             </div>
         </div>
     </section>
