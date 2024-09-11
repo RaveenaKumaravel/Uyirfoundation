@@ -1,8 +1,3 @@
-// Toggle Menu
-function toggleMenu() {
-    var nav = document.getElementById("nav-links");
-    nav.classList.toggle("show");
-}
 
 // Simple Slideshow
 let slideIndex = 0;
