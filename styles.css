@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 /* Home Section */
-.home, .gallery, .contact,{
+.home, .gallery, .contact,.involved {
     padding: 100px 20px;
     text-align: center;
     background-color: #f9f9f9;
