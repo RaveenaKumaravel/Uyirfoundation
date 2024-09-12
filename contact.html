@@ -35,7 +35,7 @@
             <div class="contact-info">
                 <h2>Our Address</h2>
                 <p>123 Uyir Street, Chennai, Tamil Nadu, India</p>
-                <p>Email: info@uyirfoundation.org</p>
+                <p>Email: raveenakumaravel@gmail.com</p> <!-- Updated email address -->
                 <p>Phone: +91 98765 43210</p>
             </div>
             <div class="contact-form">
@@ -69,7 +69,8 @@
             emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
                 from_name: name,
                 from_email: email,
-                message: message
+                message: message,
+                to_email: 'raveenakumaravel@gmail.com' // Send the email to this address
             }).then(function(response) {
                 document.getElementById('status-message').innerHTML = "Message sent successfully!";
                 document.getElementById('contact-form').reset();
