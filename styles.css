@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 /* Home Section */
-.home, .gallery, .contact, .involved {
+.home, .gallery, .contact,{
     padding: 100px 20px;
     text-align: center;
     background-color: #f9f9f9;
@@ -148,7 +148,33 @@ footer {
 .event a:hover {
     background-color: #b2952b;
 }
+/*involved section*/
+.involved {
+    margin: 40px 0;
+    text-align: center;
+}
 
+.involved  h2 {
+    color: #d4af37; /* Gold color for event heading */
+}
+
+.involved  p {
+    color: #555555;
+}
+
+.involved  a {
+    background-color: #d4af37;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.involved  a:hover {
+    background-color: #b2952b;
+}
 /* Slideshow */
 .slideshow-container {
     position: relative;
