@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uyir Foundation - Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -13,8 +19,6 @@
                 <img src="logo.png" alt="Uyir Foundation Logo" />
             </div>
             <h1>Uyir Foundation</h1>
-
-            
 
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -35,12 +39,14 @@
                 <p>Phone: +91 98765 43210</p>
             </div>
             <div class="contact-form">
-                <h2>Become a Member (Free)</h2>
-                <form action="submit_member.php" method="post">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <button type="submit">Join Us</button>
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
                 </form>
+                <p id="status-message"></p> <!-- Status message placeholder -->
             </div>
         </div>
     </section>
@@ -48,5 +54,29 @@
     <footer>
         <p>&copy; 2024 Uyir Foundation. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Function to send email via EmailJS
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Collect the form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Send email via EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                from_name: name,
+                from_email: email,
+                message: message
+            }).then(function(response) {
+                document.getElementById('status-message').innerHTML = "Message sent successfully!";
+                document.getElementById('contact-form').reset();
+            }, function(error) {
+                document.getElementById('status-message').innerHTML = "Failed to send the message. Please try again.";
+            });
+        });
+    </script>
 </body>
 </html>
