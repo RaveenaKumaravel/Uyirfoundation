@@ -9,14 +9,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo-centered">
-                <img src="logo.png" alt="Uyir Foundation Logo" />
-            </div>
-            <h1>Uyir Foundation</h1>
-
-            
-
-            <ul id="nav-links">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events & Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -25,13 +18,17 @@
         </nav>
     </header>
 
-    <section class="event">
-        <h2>Upcoming Event: Deva Concert</h2>
-        <p>Join us for an unforgettable concert experience to raise funds for Uyir Foundation's mission.</p>
-        <a href="https://www.example.com/tickets" class="cta-button">Get Tickets</a>
-    </section>
+    <section class="gallery">
+        <h1>Our Events & Gallery</h1>
 
-    <section class="slideshow-container">
+        <!-- Event: Deva Concert -->
+        <div class="event">
+            <h2>Upcoming Event: Deva Concert</h2>
+            <p>Join us for an enchanting evening of music with renowned artist <strong>Deva</strong> on <strong>September 28, 2024</strong>.</p>
+            <a href="https://tickets.uyirfoundation.org/deva-concert" class="cta-button" target="_blank">Get Tickets</a>
+        </div>
+
+        <!-- Sliding Gallery -->
         <div class="slideshow-container">
             <div class="slide fade">
                 <img src="test1.jpeg" alt="Gallery Image 1">
@@ -45,6 +42,15 @@
             <div class="slide fade">
                 <img src="test4.jpeg" alt="Gallery Image 4">
             </div>
+        </div>
+
+        <br>
+        <!-- Dots for navigation -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </section>
 
