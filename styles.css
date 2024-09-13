@@ -39,7 +39,7 @@ nav ul li a:hover {
 
 /* Centered Logo */
 .logo-centered img {
-    width: 150px;
+    width: 175px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -260,8 +260,8 @@ footer {
 .logo-centered img {
     display: block;
     border-radius: 50%;
-    width: 160px; /* Adjust the size as needed */
-    height: 160px; /* Adjust the size as needed */
+    width: 175px; /* Adjust the size as needed */
+    height: 175px; /* Adjust the size as needed */
     object-fit: cover;
     animation: rotate 10s linear infinite; /* Apply the rotation animation */
 }
