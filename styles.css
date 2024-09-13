@@ -260,8 +260,8 @@ footer {
 .logo-centered img {
     display: block;
     border-radius: 50%;
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
+    width: 160px; /* Adjust the size as needed */
+    height: 160px; /* Adjust the size as needed */
     object-fit: cover;
     animation: rotate 10s linear infinite; /* Apply the rotation animation */
 }
